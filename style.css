@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/iPhone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 337px 650px;
+    background-color: #3c3c3c;
+    /* border: 1px solid red; */
+  }
+
+.calculator {
+    width: 300px;
+    height: 620px;
+    background-color: black;
+    padding : 30px 15px;
+    border-radius: 40px;
+    /* border: 1px solid red; */
+}
+
+.info {
+    margin-left: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-top: -15px;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.calculator_result {
+    margin-top: 30px;
+    padding: 90px 10px 0px 0px;
+    text-align: right;
+    width: 100%;
+    height: 150px;
+    font-size: 60px;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.calculator_buttons {
+    margin-top: 20px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.button_row {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+  }
+
+.button_row > button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+  }
+
+.button_row > .clear, .function {
+  background-color: #c8c8c8;
+  color: black;
+  font-size: 25px;
+  }
+
+.button_row > .clear:active, .function:active {
+    background-color: white;
+  } 
+
+.button_row > .operator, .calculate {
+  background-color: orange;
+  color: white;
+  font-size: 35px;
+  }
+
+.button_row > .operator:focus, .calculate:focus {
+  background-color: white;
+  color: orange;
+  } 
+
+.button_row > .number, .decimal {
+  background-color: #505050;
+  color: white;
+  font-size: 30px;
+  }
+
+.button_row > .zero {
+    width: 130px;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 22px;
+    background-color: #505050;
+    color: white;
+    font-size: 30px;
+  }
+
+.button_row > .number:active, .decimal:active, .zero:active {
+    background-color: #969696;
+    }
+
+.home {
+  margin: 27px 80px ;
+  width: 110px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: white;
+  }
